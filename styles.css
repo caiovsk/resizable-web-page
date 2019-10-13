@@ -1,0 +1,259 @@
+/* Import Roboto font */
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+
+/* styling of main image */
+#root{
+	width: 90%;
+	justify-content: center;
+	margin: auto;
+	display: flex;
+	box-sizing: border-box;
+	position: relative;
+	height: 400px;
+}
+
+#main{
+	width: 90%;
+	height: auto;
+	padding-top: 10px;
+  padding-left: 30px;
+}
+
+/* styling overlay text and icons */
+#centerTxt{
+	position: absolute;
+	width: 60%;
+	top: 40%;
+	left: 45%;
+	transform: translate(-50%, -50%);
+	color: white;
+	font-size: 30px;
+	letter-spacing: 3px;
+	display: flex;
+  white-space: nowrap;
+}
+
+#quote{
+  position: absolute;
+	width: 60%;
+	top: 60%;
+	left: 45%;
+	transform: translate(-50%, -50%);
+	color: white;
+	font-size: 10px;
+	letter-spacing: 3px;
+	display: flex;
+  white-space: nowrap;
+  color: lightgray;
+}
+
+#compName{
+  position: absolute;
+  color: white;
+  letter-spacing: 5px;
+  top: 5%;
+  left: 10%;
+}
+
+.fas.fa-bars{
+  position: relative;
+  color: white;
+  top: 5%;
+  right: 30px;
+}
+
+.fas.fa-search{
+  position: relative ;
+  color: white;
+  top: 5%;
+  right: 80px;
+}
+
+
+/* styling of the master block */
+#master{
+	width: 85%;
+	margin: auto;
+	text-align: center;
+	box-sizing: border-box;
+	background-color: #F0F0F0;
+	margin-top: 10px;
+}
+
+
+/* styling of the top navigation */
+#top{
+	box-sizing: border-box;
+	display: flex;
+	list-style: none;
+	justify-content: center;
+	white-space: nowrap;
+	margin: 0;
+	padding-right: 5%;
+}
+
+#top li{
+	width: 100px;
+	white-space: nowrap;
+	font-weight: 100;
+	font-size: 12px;
+}	
+
+#top li:hover{
+	border-top: 1px solid black;
+	cursor: pointer;
+	transition: 0;
+}
+
+
+/* styling of products */
+.products{
+	display: grid;
+	justify-content: center;
+  	grid-template-columns: 200px 200px 200px 200px;	
+  	grid-column-gap: 30px;
+  	padding-right: 120px;
+}
+
+.products figure img{
+	width: 200px;
+	height: 200px;
+}
+
+.products figure figcaption{
+	display: flex;
+	float: left;
+	white-space: nowrap;
+	font-size: 12px;
+	font-weight: 300;
+}
+
+.products figure p{
+	position: absolute;
+	color: gray;
+	font-size: 12px;
+}
+
+/* styling of the bottom navigation */
+#bottom{
+	box-sizing: border-box;
+	display: flex;
+	list-style: none;
+	justify-content: center;
+	white-space: nowrap;
+	margin: 0;
+	padding-right: 5%;
+	padding-top: 30px;
+}
+
+#bottom li{
+	width: 30px;
+	white-space: nowrap;
+	font-weight: 100;
+	font-size: 12px;
+}	
+
+#bottom li:hover{
+	border-bottom: 1px solid black;
+	cursor: pointer;
+	transition: 0;
+}
+
+
+/* Styling of footer */
+footer{
+	justify-content: flex;
+	display: flex;
+	margin: auto;
+	width: 90%;
+}
+
+footer ul{
+	list-style: none;
+	text-align: left;
+	padding-left: 110px;
+	color: gray;
+	justify-content: flex-start;
+	margin-top: 50px;
+	font-size: 10px;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 10;
+}
+
+footer ul li{
+	color: black;
+	font-size: 12px;
+}
+
+#about{
+	margin-top: 10px;
+}
+
+#wood{
+	margin-top: 10px;
+}
+
+#fb{
+	margin-top: 10px;
+	color: #3b5998;
+}
+
+#tt{
+	color: #1DA1F2;
+}
+
+#ig{
+	color: #000;
+}
+
+#pt{
+	color: #c8232c;
+}
+
+/* styling of grid when screen is smaller */
+@media only screen and (max-width: 1200px) { /* adjust breakpoints as required */
+	.products{
+	  display: grid;
+	  position: left;
+  	grid-template-columns: 200px 200px 200px;	
+  	grid-column-gap: 30px;
+	}
+	.products figure img{
+	  width: 200px;
+	  height: 200px;
+}
+}
+
+@media only screen and (max-width: 925px){
+	.products{
+	  display: grid;
+	  padding-left: 80px;
+  	grid-template-columns: 300px 300px;	
+  	grid-column-gap: 30px;
+	}
+	.products figure img{
+	  width: 250px;
+	  height: 250px;
+  }
+
+	footer ul{
+		padding-left: 70px;
+	}
+}
+
+@media only screen and (max-width: 760px){
+	.products{
+	  display: grid;
+	  padding-left: 80px;
+    grid-template-columns: 350px;	
+  	grid-column-gap: 30px;
+	}
+	.products figure img{
+	  width: 300px;
+	  height: 300px;
+}
+}
+
+
+	
